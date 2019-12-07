@@ -8,7 +8,7 @@ import (
 )
 
 func say(word string) string {
-	title := "Hello world, this is"
+	title := "Second Hello world, this is"
 	return title + " " + word
 }
 
@@ -24,7 +24,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "9090"
 	}
 
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
